@@ -1,0 +1,199 @@
+
+<html lang="en">
+
+<head>
+    <!-- Removed tracking and other scripts -->
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+    <meta name="Description" content="Professional web and app developer, designer of user experiences.">
+    <title>Skyline</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="assets/img/favicon.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#FFE1C4">
+    <meta name="theme-color" content="#FFE1C4">
+    <script src="assets/js/app.js"></script>
+    <link rel="manifest" href="manifest.json">
+    <style>
+        /* Background video container */
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Send it behind all other content */
+            overflow: hidden;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the video covers the entire background */
+            transform: scale(1.1); /* Optional zoom for coverage */
+        }
+
+        /* Main content overlay */
+        body {
+            position: relative;
+            background: rgba(0, 0, 0, 0.5); /* Optional overlay to improve readability */
+            color: black; /* Set text color to black */
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero-tag span {
+            color: black !important; /* Ensure text in hero-tag is black */
+            white-space: nowrap; /* Prevent text from wrapping */
+        }
+
+        /* Navbar links remain white */
+        .nav-items ul li a {
+            color: white !important; /* Make text in navbar white */
+        }
+
+        /* Align content properly in the hero section */
+        .hero-tag {
+            text-align: left; /* Align the main heading to the left */
+            margin-bottom: 20px;
+            min-height: 80px; /* Ensure space for typing effect */
+        }
+
+        .hero-des {
+            text-align: left; /* Align the description text to the left */
+            margin-bottom: 20px;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: left; /* Align social icons to the left */
+        }
+
+        .social-icons a {
+            margin-right: 15px;
+            color: black; /* Set social icons to black */
+            font-size: 24px;
+        }
+
+        .social-icons a:hover {
+            color: #007bff; /* Change icon color on hover */
+        }
+
+        /* Adjust the positioning of the hero image */
+        #hero-right img {
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Style for the hamburger icon */
+        .hamburger div {
+            background-color: black !important;  /* Change hamburger icon to black */
+        }
+
+        /* Optional: Adjust the slider toggle background */
+        .toggler:checked + .hamburger div {
+            background-color: black !important;  /* Ensure the color stays black when toggled */
+        }
+
+        /* Change the text of the toggler when active (white on dark background) */
+        .toggler:checked + .hamburger div::before {
+            background-color: black !important;
+        }
+
+        /* Footer link styling */
+        .legal a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .legal a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body id="index-body" style="overflow: hidden;">
+    <!-- Background Video -->
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div>
+        <nav class="nav-desk">
+            <center>
+                <div class="nav-logo">
+                    <a href="index.html"><img id="logo" src="assets/img/logo2.png"></a>
+                </div>
+                <div class="nav-items">
+                    <ul>
+                        <li><span><a href="about.html">About</a></span></li>
+                        <li><span><a href="work.html">Work</a></span></li>
+                        <li><span><a href="uses.html">Uses</a></span></li>
+                        <li><span><a href="contact.html">Contact</a></span></li>
+                    </ul>
+                </div>
+            </center>
+        </nav>
+        <div class="animated fadeIn row" style="width:100vw; animation-duration: 1.5s;">
+            <div class="col-md-6" id="left-hero">
+                <h1 class="hero-tag">
+                    <span class="typer" id="main" data-words="Welcome to, SKYLINE." data-delay="100" data-deleteDelay="1000" data-loop="1"></span>&nbsp;
+                </h1>
+                <p class="hero-des">We offer a variety of services.</p>
+                <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+                <button class="animated bounce delay-4s learn-btn">Learn More</button>
+                <a href="contact.html"><button class="contact-btn">Contact Me</button></a>
+                <div class="social-icons">
+                    <a target="_blank" href="mailto:developer@outlook.com"><i class="fas fa-envelope"></i></a>
+                    <a target="_blank" href="https://instagram.com/developer"><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" href="https://hackerrank.com/developer"><i class="fab fa-hackerrank"></i></a>
+                    <a target="_blank" href="https://github.com/developer"><i class="fab fa-github"></i></a>
+                    <a target="_blank" href="https://linkedin.com/in/developer"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-6" id="hero-right">
+                <img id="hero-img" src="assets/img/undraw_code_review_l1q9.svg">
+            </div>
+        </div>
+    </div>
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger">
+            <div></div>
+        </div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="#" style="text-decoration: line-through;">About Us</a></li>
+                        <li><a href="work.html">Offers</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="legal">
+        <a href="legal.html">Legal</a>
+    </div>
+</body>
+
+</html>
+
+
+
